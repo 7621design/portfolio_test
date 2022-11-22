@@ -6,14 +6,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박근혁</title>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <style>
-        img {
-            width: 600px;
-            height: 1000px;
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
         }
 
-        h1 {
-            background-color: #d05fbc;
+        ul {
+            list-style: none;
+        }
+
+        h2 {
+            padding-top: 72px;
+            padding-bottom: 35px;
+            text-align: center;
+        }
+
+        span.line {
+            display: block;
+            width: 100px;
+            height: 2px;
+            background-color: cornflowerblue;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+
+        /* 헤더 */
+        header {
+            background-image: url(images/test.jpg);
+            /* background-color: #f1f1f1; */
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        /* 섹션 */
+        section h1 {
+            /* background-color: #d05fbc;
+            color: white; */
+            margin-top: 100px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 42px;
+        }
+
+        section p {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* 테이블 */
+        table {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            /* border: 1px solid #333; */
+            border-top: 1px solid #333;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid #333;
+            padding: 10px;
+        }
+
+        .picture {
+            width: 400px;
+        }
+
+        #sns {
+            height: 400px;
+            margin-top: 120px;
+            background-color: #f1f1f1;
+        }
+
+        #sns ul {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #sns ul li {
+            width: 25%;
+            float: left;
+        }
+
+        footer {
+            background-color: #222;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-size: 18px;
+            text-align: center;
             color: white;
         }
     </style>
@@ -22,22 +116,22 @@
 <body>
     <header>
         <h1>
-            <img src="images/test.jpg" alt="" width="200">
+            <img src="images/test.jpg" alt="">
         </h1>
     </header>
     <section>
+        <!-- <h1>박근혁입니다.</h1> -->
         <h2>PARK KEUN-HYUCK</h2>
+        <!-- <a href="http://www.naver.com" target="_blank">네이버로 가기</a> -->
         <span class="line"></span>
-        <p>항상 새로움을 추구하는 디자이너 박근혁입니다</p>
-        <table border="1">
+        <p>항상 새로움을 추구하는 디자이너 mark 박근혁입니다</p>
+        <table>
             <tr>
-                <td rowspan="4" class="picture">
-                    <img src="https://via.placeholder.com/300" alt="박근혁">
-                </td>
+                <td rowspan="4" class="picture"><img src="https://via.placeholder.com/300" alt=""></td>
                 <td>Name: 박근혁</td>
             </tr>
             <tr>
-                <td>Birth 2022.11.21.</td>
+                <td>Brith 2022.11.21</td>
             </tr>
             <tr>
                 <td>Phone +82 1012345678</td>
@@ -48,7 +142,7 @@
         </table>
 
         <h2>EDUCATION</h2>
-        <table border="1">
+        <table>
             <tr>
                 <td>2013.03 - 2016.02 부산 부산고등학교</td>
             </tr>
@@ -60,13 +154,41 @@
             </tr>
         </table>
 
-
-
+        <h2>SKILL</h2>
+        <table>
+            <tr>
+                <td><i class="xi-html5 xi-3x"></i> HTML5</td>
+                <td><i class="xi-css3 xi-3x"></i> CSS3</td>
+                <td><i class="xi-javascript xi-3x"></i> javaScript</td>
+            </tr>
+        </table>
     </section>
-
-
-    <br>
-    <a href="http://www.naver.com" target="_blank">네이버로 가기</a>
+    <section id="sns">
+        <h2>저는 주로 여기에 있어요.</h2>
+        <span class="line"></span>
+        <p>항상 새로움을 추구하는 디자이너 mark 박근혁입니다</p>
+        <ul>
+            <li>
+                <i class="xi-instagram xi-5x"></i><br>
+                instagram
+            </li>
+            <li>
+                <i class="xi-facebook-official xi-5x"></i><br>
+                facebook
+            </li>
+            <li>
+                <i class="xi-blogger xi-5x"></i><br>
+                blog
+            </li>
+            <li>
+                <i class="xi-twitter xi-5x"></i><br>
+                twitter
+            </li>
+        </ul>
+    </section>
+    <footer>
+        thank you
+    </footer>
 </body>
 
 </html>
